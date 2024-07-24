@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  ::v-deep .btn {
+    padding: 4px 8px;
+    background-color: #43dffa;
+    color: #fff;
+    position: absolute;
+    top: 200px;
+    cursor: pointer;
+    &.btn-1 {
+      top: 280px;
+    }
+    &.btn-2 {
+      top: 320px;
+    }
+    &.btn-3 {
+      top: 360px;
+    }
+    &.btn-4 {
+      top: 400px;
+    }
+  }
+  ::v-deep .floor-container {
+    .person-label {
+      width: 100px;
+      min-height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 14px;
+      background-image: linear-gradient(
+        to top,
+        rgba(37, 105, 207, 1),
+        rgba(37, 105, 207, 0)
+      );
+    }
+  }
+}
